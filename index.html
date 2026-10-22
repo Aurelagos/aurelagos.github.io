@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taylor Collins | AI Projects</title>
+  <meta name="description" content="A portfolio of applied AI projects at the intersection of insurance, investing, and learning design.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Taylor Collins</h1>
+      <p class="lead">Applied AI projects built from a background in property &amp; casualty insurance, training design, and program leadership. I build tools that turn messy information into clear decisions.</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="wrap">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>AI Trading Coach &amp; Portfolio Dashboard</h3>
+          <ul class="tags">
+            <li>Python</li><li>Claude API</li><li>Brokerage APIs</li><li>HTML dashboard</li>
+          </ul>
+        </div>
+        <p>A personal dashboard that pulls portfolio data from brokerage APIs and uses an LLM "coach" to review changes in positions. Instead of just showing numbers, it asks whether a move fits the investing framework it was meant to follow.</p>
+        <h4>Highlights</h4>
+        <ul>
+          <li><strong>Risk lens:</strong> a four-factor review (leverage, convexity, asymmetry, reflexivity) applied to each position change.</li>
+          <li><strong>Event-driven reviews:</strong> coach reviews trigger automatically when positions change, and routine events such as expirations are handled separately to avoid unnecessary API calls.</li>
+          <li><strong>Framework-aware:</strong> reviews are anchored to a portfolio structure with explicit sleeves and rules, so feedback is consistent rather than generic.</li>
+          <li><strong>Hygiene:</strong> secrets kept in environment files, and public data sources used where a paid feed is not needed.</li>
+        </ul>
+        <p class="note">Built for personal use. Holdings, account data, and credentials are not part of this portfolio.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>P&amp;C Insurance Market Research Workflow</h3>
+          <ul class="tags">
+            <li>Claude</li><li>Source verification</li><li>Synthesis</li><li>Industry analysis</li>
+          </ul>
+        </div>
+        <p>A repeatable human-plus-AI research process for tracking the property &amp; casualty market. I collect primary sources such as trade press and industry commentary, and the AI helps verify, contextualize, and fold them into a structured, evolving view of the market.</p>
+        <h4>How it works</h4>
+        <ul>
+          <li><strong>Verify before integrating:</strong> each claim is checked, and anything that cannot be independently confirmed is labeled as such.</li>
+          <li><strong>Facts vs. inference:</strong> confirmed facts are kept separate from well-reasoned inferences, and attribution is flagged when sources conflict.</li>
+          <li><strong>Iterative build:</strong> an initial structured overview, then successive rounds of new sources.</li>
+        </ul>
+        <h4>Themes explored</h4>
+        <ul>
+          <li>Where the market cycle differs by line of business, and how quickly those conditions change.</li>
+          <li>How regional regulation reshapes carrier appetite in residential property.</li>
+          <li>Why value in insurance technology tends to accumulate in the layer that owns data and context.</li>
+          <li>The lag between soft-market pricing and the underwriting results that follow.</li>
+        </ul>
+      </article>
+
+      <article class="card placeholder">
+        <h3>More coming</h3>
+        <p>New projects will be added here as they reach a shareable state.</p>
+      </article>
+    </section>
+
+    <section id="approach" class="wrap">
+      <h2>How I work with AI</h2>
+      <div class="grid">
+        <div>
+          <h3>Start with the decision</h3>
+          <p>I begin with the judgment a person needs to make, then design the data and prompts around it.</p>
+        </div>
+        <div>
+          <h3>Keep a human in the loop</h3>
+          <p>AI drafts, checks, and organizes. I verify sources and own the conclusions.</p>
+        </div>
+        <div>
+          <h3>Make it reusable</h3>
+          <p>Frameworks, checklists, and consistent structures beat one-off prompts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap">
+      <h2>About</h2>
+      <p>I come from P&amp;C insurance, with experience in learning and development leadership, carrier partnerships, and training program management. I hold a producer license and am continuing my professional education in risk management. I use AI to build practical tools for the things I know best: insurance, investing, and teaching people complex material.</p>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <p>Add your preferred links here (for example LinkedIn or email).</p>
+      <!-- Replace with your own links:
+      <p><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></p>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Taylor Collins</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
